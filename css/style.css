@@ -22,7 +22,7 @@ header {
 }
 
 header .logo h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
     transition: color 0.3s ease;
@@ -33,7 +33,7 @@ header .logo h1:hover {
 }
 
 header .logo p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #f5e6d9;
     letter-spacing: 2px;
 }
