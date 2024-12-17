@@ -13,6 +13,7 @@ body {
 /* Header Section */
 header {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../image/banner1.jpg') no-repeat center center/cover;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -145,8 +146,6 @@ header .logo p {
 .faq-item {
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
 }
 
 .faq-question {
@@ -163,30 +162,12 @@ header .logo p {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.faq-question:hover {
-    background-color: #e8f6f3;
-    color: #1abc9c;
-}
-
-.toggle-icon {
-    font-size: 1.5rem;
-    font-weight: bold;
-    float: right;
-    transition: transform 0.3s ease;
-}
-
-.faq-item.active .toggle-icon {
-    transform: rotate(45deg);
-}
-
 .faq-answer {
     font-size: 1rem;
     color: #555;
     padding: 10px 20px;
     display: none;
     background-color: #ffffff;
-    border-top: 1px solid #ddd;
-    transition: all 0.3s ease-in-out;
 }
 
 .faq-item.active .faq-answer {
@@ -218,7 +199,6 @@ header .logo p {
     border-radius: 5px;
     font-size: 1.1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
 .reservation-btn:hover {
@@ -233,19 +213,12 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: #f39c12;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media Queries untuk skrin kecil (telefon) */
+/* Media Queries */
 @media (max-width: 768px) {
     header {
         height: 70vh;
+        background-size: cover;
+        background-position: center;
     }
 
     header .logo h1 {
@@ -256,20 +229,20 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    .menu-items {
-        grid-template-columns: 1fr;
+    .menu {
+        padding: 40px 10px;
     }
 
     .menu-item {
-        padding: 15px;
+        padding: 10px;
     }
 
-    .faq-container {
+    .faq-container, .reservation {
         padding: 10px;
     }
 
     footer {
-        padding: 10px;
+        padding: 5px;
     }
 
     .reservation-btn {
