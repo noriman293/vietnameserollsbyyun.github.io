@@ -241,3 +241,40 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Media Queries untuk skrin kecil (telefon) */
+@media (max-width: 768px) {
+    header {
+        height: 70vh; /* Kurangkan ketinggian header */
+    }
+
+    header .logo h1 {
+        font-size: 2.5rem; /* Kecilkan saiz teks dalam header */
+    }
+
+    header .logo p {
+        font-size: 1rem;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr; /* 1 lajur untuk menu items */
+    }
+
+    .menu-item {
+        padding: 15px; /* Kurangkan padding */
+    }
+
+    .faq-container {
+        padding: 10px; /* Kurangkan padding pada FAQ */
+    }
+
+    footer {
+        padding: 10px; /* Kurangkan padding footer */
+    }
+
+    .reservation-btn {
+        font-size: 1rem;
+        padding: 10px 15px; /* Kecilkan butang */
+    }
+}
+
