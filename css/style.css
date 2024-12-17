@@ -241,3 +241,124 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 3rem;
+    }
+
+    header .logo p {
+        font-size: 1.2rem;
+    }
+
+    .menu h2 {
+        font-size: 2.4rem;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+
+    .menu-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .menu-item p {
+        font-size: 1rem;
+    }
+
+    .menu-item .order-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .faq-intro {
+        font-size: 1rem;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+
+    .reservation h2 {
+        font-size: 2.4rem;
+    }
+
+    .reservation p {
+        font-size: 1rem;
+    }
+
+    .reservation-btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 2.5rem;
+    }
+
+    header .logo p {
+        font-size: 1rem;
+    }
+
+    .menu h2 {
+        font-size: 2rem;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .menu-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
+    }
+
+    .menu-item .order-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .faq h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-intro {
+        font-size: 0.9rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.8rem;
+    }
+
+    .reservation h2 {
+        font-size: 2rem;
+    }
+
+    .reservation p {
+        font-size: 0.9rem;
+    }
+
+    .reservation-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
