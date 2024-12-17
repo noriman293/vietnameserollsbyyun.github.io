@@ -13,7 +13,6 @@ body {
 /* Header Section */
 header {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../image/banner1.jpg') no-repeat center center/cover;
-    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -146,6 +145,8 @@ header .logo p {
 .faq-item {
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
 }
 
 .faq-question {
@@ -162,12 +163,30 @@ header .logo p {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.faq-question:hover {
+    background-color: #e8f6f3;
+    color: #1abc9c;
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
 .faq-answer {
     font-size: 1rem;
     color: #555;
     padding: 10px 20px;
     display: none;
     background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
 }
 
 .faq-item.active .faq-answer {
@@ -199,6 +218,7 @@ header .logo p {
     border-radius: 5px;
     font-size: 1.1rem;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .reservation-btn:hover {
@@ -213,40 +233,11 @@ footer {
     text-align: center;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    header {
-        height: 70vh;
-        background-size: cover;
-        background-position: center;
-    }
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
 
-    header .logo h1 {
-        font-size: 2.5rem;
-    }
-
-    header .logo p {
-        font-size: 1rem;
-    }
-
-    .menu {
-        padding: 40px 10px;
-    }
-
-    .menu-item {
-        padding: 10px;
-    }
-
-    .faq-container, .reservation {
-        padding: 10px;
-    }
-
-    footer {
-        padding: 5px;
-    }
-
-    .reservation-btn {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
